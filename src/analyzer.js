@@ -16,32 +16,40 @@ const analyzer = {
 
 
   getAverageWordLength: (text) => {
-    // Longitud media de las palabras.
-    const words = text.split(/\s+/); // Dividir el texto en palabras
+    const words = text.split(/\s+/);
     const totalWordLength = words.reduce((acc, word) => acc + word.length, 0);
     const average = words.length > 0 ? totalWordLength / words.length : 0;
-    return average;
+    return parseFloat(average.toFixed(2)); // Redondear a 2 decimales
   },
+  
   
 
   getNumberCount: (text) => {
-    // Cantidad de números.
-    const numbers = text.match(/\d+/g);
-    if (numbers) {
-      return numbers.length;
-    } else {
-      return 0;
-    }
+    const numbers = text.match(/\b\d+(\.\d+)?\b/g);
+    return numbers ? numbers.length : 0;
   },
+  
+  
+  
   getNumberSum: (text) => {
-    const numbers = text.match(/[-+]?[0-9]*\.?[0-9]+/g); // Coincide con números enteros y decimales
-    if (numbers) {
-      const sum = numbers.reduce((acc, num) => parseFloat(acc) + parseFloat(num), 0);
-      return sum;
-    } else {
-      return 0;
+    const numbers = text.match(/\b\d+(\.\d+)?\b/g);
+  
+    if (!numbers || numbers.length === 0) {
+      return 0; // No se encontraron números o no hay números válidos
     }
+  
+    let sum = 0;
+    for (const num of numbers) {
+      const parsedNum = parseFloat(num);
+      if (!isNaN(parsedNum)) {
+        sum += parsedNum;
+      }
+    }
+  
+    return parseFloat(sum); // Redondear a 1 decimal
   },
+  
+   
 };
   
 

@@ -14,16 +14,18 @@
 <body>
 
   <div class="container">
-    <h1>Analizador de texto</h1>
+    <header>
+      <h1>Analizador de texto</h1>
+    </header>
 
     <div id="results">
       <ul>
         <li data-testid="word-count">Conteo de Palabras: 0</li>
         <li data-testid="character-count">Conteo de Caracteres: 0</li>
         <li data-testid="character-no-spaces-count">Conteo de Caracteres (sin espacios ni puntuacion): 0</li>
+        <li data-testid="word-length-average">Longitud media de las palabras: 0</li>
         <li data-testid="number-count">Conteo de numeros: 0</li>
         <li data-testid="number-sum">Suma total de números: 0</li>
-        <li data-testid="word-length-average">Longitud media de las palabras: 0</li>
       </ul>
     </div>
 
@@ -31,9 +33,12 @@
     <textarea name="user-input" placeholder="Escribe tu texto:"></textarea>
 
     <!-- Contenido del pie de página -->
+    <div class="button-container">
     <button id="reset-button">Limpiar</button>
+    </div>
 
-    <footer>
+    <footer class="footer">
+      
       <p>Leydy Massiell Quintanilla Rojas</p>
 
       <!-- "mailto:" indica que es un enlace de correo electrónico etiqueta <a> y el atributo hrefSS -->

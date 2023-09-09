@@ -9,6 +9,15 @@ body {
   background-color: #f4f4f4;
 }
 
+header {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  border-bottom: 2px solid #007bff; /* Línea de subrayado */
+  background-color: #f0f0f0; /* Color de fondo del header */
+  text-align: center; /* Centra el contenido del header horizontalmente */
+  background-color: #f0f0f0;
+  padding: 20px; /* Espacio interior para mejorar el aspecto */
+}
+
 .container {
   background-color: white;
   border-radius: 8px;
@@ -32,12 +41,17 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  
   font-size: 16px; /* Ajusta el tamaño de fuente del texto */
   width: 200px; /* Ajusta el ancho del botón según tus necesidades */
   height: 40px; /* Ajusta la altura del botón según tus necesidades */
-  
-  
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 10vh; /* Ocupa toda la altura de la ventana */
 }
 
 button:hover {
