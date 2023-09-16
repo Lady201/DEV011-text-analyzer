@@ -2,7 +2,14 @@ const analyzer = {
   getWordCount: (text) => {
     // Recuento de palabras.
     const words = text.trim().split(/\s+/);
-    return words.length;
+    let count = 0;
+    for (let i = 0; i < words.length; i++) {
+      if (words[i] !== "") {
+        count++;
+      }
+    }
+
+    return count;
   },
   getCharacterCount: (text) => {
     // Recuento de caracteres.

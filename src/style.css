@@ -18,13 +18,17 @@ header {
   padding: 20px; /* Espacio interior para mejorar el aspecto */
 }
 
-.container {
+#container {
   background-color: white;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 80%;
   max-width: 600px;
+  margin: 0 auto; /* Agrega esta propiedad para centrar horizontalmente */
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centra el contenido del header horizontalmente */
+  
 }
 
 textarea {
@@ -60,10 +64,13 @@ button:hover {
 
 #results {
   margin-top: 20px;
-
 }
 
 #results span {
   font-weight: bold;
 }
   
+
+.footer {
+  margin: auto;
+}

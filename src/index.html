@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <!--nombre de la pagina (pestaña del navegador)-->
+    <title>Text Analyzer</title>
+    <!--enlace con CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <!--cuerpo de página-->
+  <body>
+    <div class="container">
+      <header>
+        <h1>Analizador de texto</h1>
+      </header>
+      <br />
+      <div class="container"><h3>Paleta de conteo en tiempo real</h3></div>
+      <div id="results">
+        <ul>
+          <li data-testid="word-count" class="separar">
+            Conteo de Palabras: 0
+          </li>
+          <li data-testid="character-count" class="separar">
+            Conteo de Caracteres: 0
+          </li>
+          <li data-testid="character-no-spaces-count" class="separar">
+            Conteo de Caracteres (sin espacios ni puntuacion): 0
+          </li>
+          <li data-testid="word-length-average" class="separar">
+            Longitud media de las palabras: 0
+          </li>
+          <li data-testid="number-count" class="separar">
+            Conteo de numeros: 0
+          </li>
+          <li data-testid="number-sum" class="separar">
+            Suma total de números: 0
+          </li>
+        </ul>
+      </div>
 
-<head>
-  <meta charset="utf-8">
-  <!--nombre de la pagina (pestaña del navegador)-->
-  <title>Text Analyzer</title>
-  <!--enlace con CSS-->
-  <link rel="stylesheet" href="style.css" />
-</head>
+      <textarea name="user-input" placeholder="Escribe tu texto:"></textarea>
 
-<!--cuerpo de página-->
+      <!-- Contenido del pie de página -->
+      <div class="button-container">
+        <button id="reset-button">Limpiar</button>
+      </div>
+      <footer>
+        <p>Leydy Massiell Quintanilla Rojas</p>
 
-<body>
-
-  <div class="container">
-    <header>
-      <h1>Analizador de texto</h1>
-    </header>
-
-    <div id="results">
-      <ul>
-        <li data-testid="word-count">Conteo de Palabras: 0</li>
-        <li data-testid="character-count">Conteo de Caracteres: 0</li>
-        <li data-testid="character-no-spaces-count">Conteo de Caracteres (sin espacios ni puntuacion): 0</li>
-        <li data-testid="word-length-average">Longitud media de las palabras: 0</li>
-        <li data-testid="number-count">Conteo de numeros: 0</li>
-        <li data-testid="number-sum">Suma total de números: 0</li>
-      </ul>
+        <!-- "mailto:" indica que es un enlace de correo electrónico etiqueta <a> y el atributo hrefSS -->
+      <p class="button-container">
+          <a href="mailto:quintanillarojasleydymassiell@gmail.com">
+              <!--cuerpo de página-->
+              contactame
+              <!-- <button>Contacto</button> -->
+          </a>
+        </p>
+      </footer>
     </div>
-
-    <!-- Contenido del pie de página -->
-    <textarea name="user-input" placeholder="Escribe tu texto:"></textarea>
-
-    <!-- Contenido del pie de página -->
-    <div class="button-container">
-    <button id="reset-button">Limpiar</button>
-    </div>
-
-    <footer class="footer">
-      
-      <p>Leydy Massiell Quintanilla Rojas</p>
-
-      <!-- "mailto:" indica que es un enlace de correo electrónico etiqueta <a> y el atributo hrefSS -->
-      <p><a href="mailto:quintanillarojasleydymassiell@gmail.com">Contacto</a></p>
-    </footer>
-  </div>
-
-  <script src="index.js" type="module"></script>
-  <script src="analyzer.js" type="module"></script>
-</body>
-
+    <!--cuerpo de página-->
+    <script src="index.js" type="module"></script>
+    <script src="analyzer.js" type="module"></script>
+  </body>
 </html>

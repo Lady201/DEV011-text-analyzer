@@ -4,8 +4,9 @@ const textInput = document.querySelector('[name="user-input"]');
 const clearButton = document.getElementById("reset-button");
 const metricsList = document.querySelectorAll("[data-testid]");
 
-textInput.addEventListener("input", updateMetrics);
-clearButton.addEventListener("click", clearText);
+//textInput.addEventListener("input", updateMetrics);
+clearButton.addEventListener("click", clearText,)
+textInput.addEventListener("keyup", updateMetrics);
 
 function updateMetrics() {
   const text = textInput.value;
@@ -48,9 +49,11 @@ function updateMetricValue(metricTestId, value) {
 
 function clearText() {
   textInput.value = "";
-  metricsList.forEach((metricElement) => {
+  for (let index = 0; index < metricsList.length; index++) {
+    const metricElement = metricsList[index];
     metricElement.textContent = `${metricElement.textContent.split(":")[0]}: 0`;
-  });
+  }
+
 }
 
 updateMetrics();
