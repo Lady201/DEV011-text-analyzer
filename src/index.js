@@ -5,7 +5,10 @@ const clearButton = document.getElementById("reset-button");
 const metricsList = document.querySelectorAll("[data-testid]");
 
 textInput.addEventListener("input", updateMetrics);
-clearButton.addEventListener("click", clearText);
+clearButton.addEventListener("click", clearText,)
+textInput.addEventListener("keyup", function () {
+
+});
 
 function updateMetrics() {
   const text = textInput.value;
