@@ -81,14 +81,11 @@ button:hover {
   background-color: #0056b3;
 }
 
-.results {
+#results {
   margin-top: 20px;
 
 }
 
-#results span {
-  font-weight: bold;
-}
   
 .separar {
   margin:auto
