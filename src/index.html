@@ -9,14 +9,21 @@
   </head>
   <!--cuerpo de página-->
   <body>
+    <!--  Abre un <div> con la clase "container" que se utiliza para agrupar y aplicar estilos a elementos dentro de él. -->
     <div class="container">
       <header>
+        <!--Define un encabezado de nivel 1 con el texto "Analizador de texto". -->
         <h1>Analizador de texto</h1>
       </header>
+      <!-- Agrega un salto de línea en el contenido. -->
       <br />
+      <!-- Crea otro <div> con la clase "container" que contiene un encabezado de nivel 3 con el texto "Paleta de conteo en tiempo real". -->
       <div class="container"><h3>Paleta de conteo en tiempo real</h3></div>
+      <!-- Inicia un <div> con el atributo id "results", que se usa para agrupar los resultados del análisis de texto. -->
       <div id="results">
+        <!-- Inicia una lista no ordenada. -->
         <ul>
+          <!-- Crea un elemento de lista con un atributo de datos llamado "data-testid", una clase "separar" -->
           <li data-testid="word-count" class="separar">
             Conteo de Palabras: 0
           </li>
@@ -38,26 +45,32 @@
         </ul>
       </div>
 
+      <!-- Crea un área de texto con el nombre "user-input" y un marcador de posición (placeholder) que muestra "Escribe tu texto:". -->
       <textarea name="user-input" placeholder="Escribe tu texto:"></textarea>
 
       <!-- Contenido del pie de página -->
+      <!-- Abre un <div> con la clase "button-container" para agrupar elementos relacionados con botones. -->
       <div class="button-container">
+        <!-- Define un botón con el atributo id "reset-button" y el texto "Limpiar". -->
         <button id="reset-button">Limpiar</button>
       </div>
+      <!-- Inicia la sección de pie de página de la página web. -->
       <footer>
+        <!-- deifinimos el parrafo -->
         <p>Leydy Massiell Quintanilla Rojas</p>
 
         <!-- "mailto:" indica que es un enlace de correo electrónico etiqueta <a> y el atributo hrefSS -->
-      <p class="button-container">
+        <!-- Abre un párrafo con la clase "button-container" que se usa para agrupar elementos relacionados con botones dentro del pie de página. -->
+        <p class="button-container">
+          <!-- Crea un enlace de correo electrónico que, cuando se hace clic, abrirá el programa de correo predeterminado del usuario con la dirección de correo especificada. -->
           <a href="mailto:quintanillarojasleydymassiell@gmail.com">
-              <!--cuerpo de página-->
-              contactame
-              <!-- <button>Contacto</button> -->
+            <!--Define el texto "contactame" que se mostrará como el contenido del enlace de correo electrónico.-->
+            contactame
           </a>
         </p>
       </footer>
     </div>
-    <!--cuerpo de página-->
+    <!--Enlazan archivos JavaScript externos para agregar funcionalidad a la página. Estos scripts se ejecutarán en el navegador.-->
     <script src="index.js" type="module"></script>
     <script src="analyzer.js" type="module"></script>
   </body>
