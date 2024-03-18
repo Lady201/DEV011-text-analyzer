@@ -1,0 +1,119 @@
+body {
+ font-family: Arial, sans-serif; /*Establece la fuente utilizada para el texto en el cuerpo de la página. */
+  margin: 0; /*Quita los espacios en blanco alrededor del borde de la página.*/
+  padding: 0;  /*<body>, asegurando que no haya espacio en blanco alrededor del borde de la página.*/
+  display: flex; /*Hace que el elemento <body> se comporte como un contenedor flexible, lo que permite alinear y distribuir elementos secundarios de manera flexible.*/
+  justify-content: center; /* Centra horizontalmente el contenido dentro del elemento <body>. */
+  align-items: center; /*Centra verticalmente el contenido dentro del elemento <body>. */
+  min-height: 100vh; /*Establece la altura mínima del elemento <body> al 100% del alto de la ventana (viewport height), lo que garantiza que el contenido ocupe al menos toda la altura de la ventana.*/
+  background-color: #f4f4f4;  /*Establece el color de fondo del cuerpo de la página en un gris muy claro.*/
+}
+/* sin nada selector de tipo */
+header {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  border-bottom: 2px solid #007bff; /* Línea de subrayado */
+  background-color: #f0f0f0; /* Color de fondo del header */
+  text-align: center; /* Centra el contenido del header horizontalmente */
+  padding: 20px; /* Espacio interior para mejorar el aspecto */
+}
+/* el punto es el selectro de clase */
+.container {
+  background-color: white;  /*Establece el color de fondo del elemento con la clase .container en blanco. */
+  border-radius: 8px;   /*Agrega esquinas redondeadas al elemento.  */
+  padding: 20px;  /*Agrega un espacio interior alrededor del contenido dentro del contenedor.  */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /*Agrega una sombra al contenedor para darle profundidad.*/
+  width: 80%;  /*Establece el ancho del contenedor en el 80% del ancho de su contenedor principal. */
+  max-width: 2200px; /*stablece el ancho máximo del contenedor en 2200 píxeles. */
+  margin: auto; /* Centra horizontalmente el contenedor en su contenedor principal.  */
+  font-family: Arial, sans-serif;  /*Establece la fuente utilizada para el texto dentro del contenedor.*/
+  text-align: center; /* Centra el contenido del header horizontalmente */
+}
+
+
+textarea[name="user-input"]
+{
+  width: 100%; /*Establece el ancho del textarea al 100% del ancho de su contenedor.*/
+  height: 150px; /*Establece la altura del textarea en 150 píxeles.*/
+  padding: 10px;  /*Agrega espacio interno alrededor del cuadro de texto.*/
+  margin-bottom: 10px;  /*Agrega espacio debajo del cuadro de texto. */
+}
+
+button {
+  padding: 12px 24px; /* Establece el espacio de relleno del botón para hacerlo más grande.*/
+  background-color: #007bff;  /*Establece el color de fondo del botón en azul (#007bff).*/
+  color: white;  /*Establece el color del texto del botón en blanco.*/
+  border: none;  /*Elimina el borde del botón.*/
+  border-radius: 4px;  /*Agrega esquinas redondeadas al botón.*/
+  cursor: pointer;  /*Cambia el cursor del mouse al puntero cuando pasa sobre el botón.*/
+  font-size: 16px; /* Establece el tamaño de fuente del texto del botón.*/
+  width: 200px; /*Establece el ancho del botón en 200 píxeles.*/
+  height: 40px; /* Establece la altura del botón en 40 píxeles.*/
+}
+
+
+div.button-container {
+  display: flex;   /* Hace que los contenedores de botones se comporten como contenedores flexibles para centrar su contenido horizontalmente. */
+  justify-content: center;   /* centra horizontalmente el contenido dentro de estos elementos <div>. En otras palabras, si tienes elementos hijos dentro de estos <div>, esos elementos se alinearán en el centro horizontal dentro de los <div>.*/
+}
+
+p.button-container {
+  display: flex;  /*hace que los elementos <p> con esta clase se comporten como contenedores flexibles, de manera similar a lo explicado en la línea anterior.*/
+  justify-content: center;   /*centra horizontalmente el contenido dentro de estos elementos <p>*/
+}
+
+
+button:hover /*Esta línea selecciona todos los elementos <button> cuando el cursor del ratón pasa sobre ellos (estado de "hover"). */{
+  background-color: #0056b3;  /*cambia el color de fondo de los botones a #0056b3 cuando el cursor del ratón pasa sobre ellos. Esto crea un efecto de resaltado cuando se interactúa con los botones.  */
+}
+
+/*  # es un selector de ID */
+#results {
+  margin-top:auto;  /*Empuja el resultado hacia la parte inferior del contenedor principal.*/
+
+}
+
+ul {
+  font-family: Arial, sans-serif; /*Establece la fuente utilizada para el texto en el cuerpo de la página. */
+  list-style-type: none;   /*Elimina las viñetas de la lista desordenada (ul). */
+  font-weight: bold;   /*palabras de los li en negrita */
+}
+  
+.separar {
+  margin:auto  /*Centra horizontalmente el texto con esta clase.*/
+}
+
+footer {
+  margin:auto  /*Centra horizontalmente el contenido del pie de página.*/
+  
+}
+
+#reset-button {
+  display: flex;   /*Esta línea hace que el elemento con el id "reset-button" se comporte como un contenedor flexible. Esto permite controlar la alineación de su contenido, tanto horizontal como verticalmente.*/
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 10vh; /* Ocupa toda la altura de la ventana */
+  margin: 0;  /*Quita los espacios en blanco alrededor del borde de la página.*/
+}
+
+footer p:first-child {
+  font-size: 18px;  /*Aplica un estilo de tamaño de fuente de 18 píxeles al primer párrafo dentro del <footer> */
+  margin-bottom: 10px; /* Agrega margen inferior */
+}
+
+footer a {
+  color: #007bff; /* Cambia el color del enlace */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Agrega subrayado al pasar el mouse sobre el enlace */
+}
+
+.button-container {
+  margin-top: 10px; /* Agrega margen superior al contenedor del botón */
+}
+
+/* todo lo que se agrega en los selectores de css se llaman propiedades */
+
+
+
